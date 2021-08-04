@@ -21,11 +21,11 @@ const zlib = require('zlib');
 const parsedArgs = require('yargs').argv;
 
 const { supersetPort = 8088, superset: supersetUrl = null } = parsedArgs;
-console.log(`${supersetUrl}:${supersetPort}`)
 const backend = (supersetUrl || `http://localhost:${supersetPort}`).replace(
   '//+$/',
   '',
 ); // strip ending backslash
+console.log(backend)
 
 let manifest;
 function isHTML(res) {

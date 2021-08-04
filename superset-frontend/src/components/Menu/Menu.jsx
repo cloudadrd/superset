@@ -56,14 +56,14 @@ export default function Menu({
   return (
     <header className="top" id="main-menu">
       <Navbar inverse fluid staticTop role="navigation">
-        <Navbar.Header>
+        {/* <Navbar.Header>
           <Navbar.Brand>
             <a className="navbar-brand" href={brand.path}>
               <img width="126" src={brand.icon} alt={brand.alt} />
             </a>
           </Navbar.Brand>
           <Navbar.Toggle />
-        </Navbar.Header>
+        </Navbar.Header> */}
         <Nav>
           {menu.map((item, index) => (
             <MenuObject {...item} key={item.label} index={index + 1} />
