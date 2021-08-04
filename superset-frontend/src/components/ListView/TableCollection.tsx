@@ -41,7 +41,7 @@ export default function TableCollection({
       <thead>
         {headerGroups.map(headerGroup => (
           <tr {...headerGroup.getHeaderGroupProps()}>
-            {headerGroup.headers.map(column =>
+            {headerGroup.headers.map((column: any) =>
               column.hidden ? null : (
                 <th
                   {...column.getHeaderProps(
@@ -79,7 +79,7 @@ export default function TableCollection({
                 row.setState && row.setState({ hover: false })
               }
             >
-              {row.cells.map(cell => {
+              {row.cells.map((cell: any) => {
                 if (cell.column.hidden) return null;
 
                 const columnCellProps = cell.column.cellProps || {};

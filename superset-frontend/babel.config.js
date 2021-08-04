@@ -28,7 +28,7 @@ module.exports = {
       {
         useBuiltIns: 'usage',
         corejs: 3,
-        loose: true,
+        loose: false,
         modules: false,
         shippedProposals: true,
         targets: packageConfig.browserslist,
@@ -56,7 +56,7 @@ module.exports = {
           {
             useBuiltIns: 'usage',
             corejs: 3,
-            loose: true,
+            loose: false,
             shippedProposals: true,
             modules: 'commonjs',
             targets: { node: 'current' },
